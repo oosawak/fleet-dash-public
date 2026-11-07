@@ -93,7 +93,7 @@
   <div class="secthead"><h2>CVE対応履歴</h2>
     
   </div>
-  <div class="sub">脆弱性の日次チェックで対応した、件数と状態の集計です。個別の内容は公開版では伏せています／ 更新: <span id="cveUpdated">-</span></div>
+  <div class="sub">「こういう問題があって、こういう対応をした」の一覧。脆弱性の日次チェックの実データから自動生成（公開版では対象名と進み具合まで載せています）／ 更新: <span id="cveUpdated">-</span></div>
   <div class="grid" id="cveGrid" style="padding-left:0;padding-right:0;"></div>
 </section>
 <section class="sect">
@@ -140,7 +140,7 @@
   <div class="sub">ミューズの作業環境の中に作られた道具と仕組みの目録。GitHub のリポ一覧とは別（made_in_env.json）／ <span id="envCount">-</span> 件</div>
   <div class="grid" id="envGrid" style="padding-left:0;padding-right:0;"></div>
 </section>
-<footer>このページは公開版のコピーです。マシン名・棚卸しの詳細・対象リポなど、個人や環境が分かる情報は伏せてあります。記録は Markdown で残し、自動で一覧にしています。</footer>
+<footer>このページは公開版のコピーです。マシン名・棚卸しの詳細など、個人や環境が分かる情報は伏せてあります。記録は Markdown で残し、自動で一覧にしています。</footer>
 <script>
 let fleetData = null;
 let machinesView = 'card';
@@ -342,19 +342,49 @@ function renderCve() {
   const grid = document.getElementById('cveGrid');
   grid.innerHTML = '';
   if (!cveData) return;
-  const s = cveData.summary || {};
+  if (!cveData.items || !cveData.items.length) {
+    grid.className = '';
+    grid.textContent = '対応履歴はまだありません。';
+    return;
+  }
   grid.className = 'grid';
-  const el = document.createElement('div');
-  el.className = 'card';
-  el.innerHTML = `
-      <h2>対応の集計</h2>
-      <div class="kind">脆弱性の日次チェックで対応した分（個別の内容は伏せています）</div>
-      <div class="bignum"></div>
-      <div class="spec bystatus"></div>`;
-  el.querySelector('.bignum').textContent = (s.total ?? 0) + ' 件';
-  const parts = Object.entries(s.by_status || {}).map(([k, v]) => `${k}: ${v}件`);
-  el.querySelector('.bystatus').textContent = parts.join(' ／ ') || '-';
-  grid.appendChild(el);
+  for (const it of cveData.items) {
+    const el = document.createElement('div');
+    el.className = 'card';
+    el.innerHTML = `
+      <h2><a target="_blank" rel="noopener"></a></h2>
+      <div class="kind"></div>
+      <div class="spec">
+        <span>日付:</span> ${it.date || '-'}<br>
+        <span>影響バージョン:</span> ${(it.affected || []).join(' / ') || '-'}<br>
+        <span>当たった場所:</span>
+        <ul class="locs"></ul>
+        <span>問題:</span> <span class="sum"></span><br>
+        <span>対応:</span> <span class="res"></span>
+        <span class="progwrap"><br><span>進み具合:</span> <span class="prog"></span></span>
+      </div>
+      <span class="status"></span>`;
+    const link = el.querySelector('h2 a');
+    link.href = it.url || '#';
+    link.textContent = it.cve || '-';
+    el.querySelector('.kind').textContent =
+      `${it.product || ''} ／ CVSS ${it.cvss ?? '-'} ／ KEV ${it.kev ? '掲載あり' : '未掲載'}`;
+    const ul = el.querySelector('.locs');
+    for (const loc of it.targets || []) {
+      const li = document.createElement('li');
+      li.textContent = loc;
+      ul.appendChild(li);
+    }
+    el.querySelector('.sum').textContent = it.summary || '-';
+    el.querySelector('.res').textContent = it.response || '-';
+    const pw = el.querySelector('.progwrap');
+    if (it.progress) pw.querySelector('.prog').textContent = it.progress; else pw.style.display = 'none';
+    const st = el.querySelector('.status');
+    st.textContent = it.status || '';
+    if (it.status === '完了' || it.status === '対応完了') st.classList.add('done');
+    if (it.status === '失敗') st.classList.add('failed');
+    grid.appendChild(el);
+  }
 }
 fetch('cve.json').then(r => r.json()).then(d => {
   document.getElementById('cveUpdated').textContent = d.updated || '-';
