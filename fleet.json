@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07",
+  "updated": "2026-11-12",
   "center": "ミューズ（取りまとめ・検品）",
   "note": "公開版。マシン名は役割名に置き換え、棚卸しの詳細とモデル一覧は伏せてあります。",
   "machines": [
@@ -53,57 +53,21 @@
       "status": "APIキー待ち"
     },
     {
-      "name": "自宅サーバー2台目",
+      "name": "i9",
       "kind": "自宅マシン",
       "os": "Ubuntu",
-      "cpu": "棚卸し待ち",
-      "ram_gb": null,
+      "cpu": "Intel Core i9",
+      "ram_gb": 128,
       "gpus": [
         {
-          "model": "GPU（型番は棚卸し待ち）",
+          "model": "NVIDIA GeForce RTX 3090",
           "vram_gb": 24
         }
       ],
       "storage_free_gb": null,
       "runtime": "未確認",
       "models": [],
-      "role": "配置は棚卸しの結果を見て決める",
-      "status": "ハードウェア棚卸し待ち"
-    },
-    {
-      "name": "自宅サーバー3台目",
-      "kind": "自宅マシン",
-      "os": "Ubuntu",
-      "cpu": "Intel Core i9（世代は棚卸し待ち）",
-      "ram_gb": null,
-      "gpus": [
-        {
-          "model": "GPU（型番は棚卸し待ち）",
-          "vram_gb": null
-        }
-      ],
-      "storage_free_gb": null,
-      "runtime": "未確認",
-      "models": [],
-      "role": "配置は棚卸しの結果を見て決める",
-      "status": "ハードウェア棚卸し待ち"
-    },
-    {
-      "name": "自宅サーバー4台目",
-      "kind": "自宅マシン",
-      "os": "未確認",
-      "cpu": "棚卸し待ち",
-      "ram_gb": null,
-      "gpus": [
-        {
-          "model": "AMD Radeon（型番は棚卸し待ち）",
-          "vram_gb": null
-        }
-      ],
-      "storage_free_gb": null,
-      "runtime": "未確認",
-      "models": [],
-      "role": "配置は棚卸しの結果を見て決める",
+      "role": "ローカルLLM（PLaMo 31B）の置き場",
       "status": "ハードウェア棚卸し待ち"
     }
   ]
