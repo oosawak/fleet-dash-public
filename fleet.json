@@ -4,7 +4,7 @@
   "note": "公開版。マシン名は役割名に置き換え、棚卸しの詳細とモデル一覧は伏せてあります。",
   "machines": [
     {
-      "name": "自宅サーバー1台目",
+      "name": "自宅サーバー2台目",
       "kind": "自宅マシン",
       "os": "Ubuntu",
       "cpu": "AMD Ryzen 7 PRO 8845HS w/ Radeon 780M Graphics",
@@ -71,7 +71,7 @@
       "status": "APIキー待ち"
     },
     {
-      "name": "i9",
+      "name": "自宅サーバー1台目",
       "kind": "自宅マシン",
       "os": "Ubuntu",
       "cpu": "Intel Core i9",
