@@ -22,6 +22,8 @@
   .status { display:inline-block; margin-top:10px; font-size:12px; padding:3px 9px; border-radius:999px; border:1px solid var(--wait); color:var(--wait); }
   .status.done { border-color:var(--ok); color:var(--ok); }
   .status.failed { border-color:#e05c5c; color:#e05c5c; }
+  .statuses { margin-top:10px; }
+  .statuses .status { margin-top:0; margin-right:6px; }
   .models { margin-top:8px; font-size:12px; color:var(--sub); word-break:break-all; }
   .detailbtn { margin-top:10px; background:transparent; color:var(--sub); border:1px solid var(--line); border-radius:999px; font-family:inherit; font-size:12px; padding:3px 12px; cursor:pointer; }
   .detailbtn.active { background:#1e2a3a; color:var(--accent); }
@@ -237,7 +239,7 @@ function renderMachines() {
       let nameTd = null;
       vals.forEach((v, i) => {
         const td = document.createElement('td');
-        if (i === 8) td.appendChild(machineStatus(m.status));
+        if (i === 8) { for (const s of (m.statuses && m.statuses.length ? m.statuses : [m.status || ''])) { td.appendChild(machineStatus(s)); td.appendChild(document.createTextNode(' ')); } }
         else td.textContent = v;
         if (i === 0) nameTd = td;
         tr.appendChild(td);
@@ -277,7 +279,6 @@ function renderMachines() {
     const el = document.createElement('div');
     el.className = 'card';
     const gpu = machineGpu(m);
-    const done = /済み|稼働/.test(m.status || '');
     el.innerHTML = `
       <h2></h2><div class="kind"></div>
       <div class="spec">
@@ -290,11 +291,12 @@ function renderMachines() {
       </div>
       <div class="role"></div>
       ${m.models && m.models.length ? '<div class="models">モデル: ' + m.models.join(' / ') + '</div>' : ''}
-      <span class="status ${done ? 'done' : ''}"></span>`;
+      <div class="statuses"></div>`;
     el.querySelector('h2').textContent = m.name;
     el.querySelector('.kind').textContent = m.kind || '';
     el.querySelector('.role').textContent = '役割: ' + (m.role || '-');
-    el.querySelector('.status').textContent = m.status || '';
+    const sw = el.querySelector('.statuses');
+    for (const s of (m.statuses && m.statuses.length ? m.statuses : [m.status || ''])) sw.appendChild(machineStatus(s));
     el.appendChild(makeDetail(detailPairs(m), '詳細は公開版では伏せています'));
     grid.appendChild(el);
   }
