@@ -85,7 +85,7 @@
       "storage_free_gb": null,
       "runtime": "未確認",
       "models": [],
-      "role": "ローカルLLM（PLaMo 31B）の置き場",
+      "role": "配置は棚卸しの結果を見て決める",
       "status": "ハードウェア棚卸し待ち"
     }
   ]
