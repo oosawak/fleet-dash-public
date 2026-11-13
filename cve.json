@@ -1,13 +1,1419 @@
 {
-  "updated": "2026-11-07",
+  "updated": "2026-11-13",
   "note": "公開版でも個別の対応履歴を載せています。対象はツール名のレベルで、棚卸しの詳細（パスや版数の対応表）は含みません。",
   "summary": {
-    "total": 1,
+    "total": 91,
     "by_status": {
+      "対応中": 16,
+      "報告済み": 60,
+      "完了": 14,
       "対応完了": 1
     }
   },
   "items": [
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-128067",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-128067",
+      "product": "Pillow",
+      "cvss": 8.4,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "Pillow 2.3.0〜12.3.0。圧縮 TIFF を libtiff 経由で保存する際に攻撃者管理の画像サイズタグがエンコーダに渡され、バッファオーバーフローしうる。",
+      "response": "Markdown CMS 各リポの Pillow を 13.0.0 へ",
+      "status": "対応中",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-128066",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-128066",
+      "product": "Pillow",
+      "cvss": 8.7,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "Pillow 1.0〜12.3.0。TIFF の IFD タグ値を読み込む際に合計量の制限が無く、細工した TIFF や EXIF 付き JPEG/PNG/WebP/MPO でメモリ使用量が二次関数的に増大（DoS）。",
+      "response": "Markdown CMS 各リポの Pillow を 13.0.0 へ",
+      "status": "対応中",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124952",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124952",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124948",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124948",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124947",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124947",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124943",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124943",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124932",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124932",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124926",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124926",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124924",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124924",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124922",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124922",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124919",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124919",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124918",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124918",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124915",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124915",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124908",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124908",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124907",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124907",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124906",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124906",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124904",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124904",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124899",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124899",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124898",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124898",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124897",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124897",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124895",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124895",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124894",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124894",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124893",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124893",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124892",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124892",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124891",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124891",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124890",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124890",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124889",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124889",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124888",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124888",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124887",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124887",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124885",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124885",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124884",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124884",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124883",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124883",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124882",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124882",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124881",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124881",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124880",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124880",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124878",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124878",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124877",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124877",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124876",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124876",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124875",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124875",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124872",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124872",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124871",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124871",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124870",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124870",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124869",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124869",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124868",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124868",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124867",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124867",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124866",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124866",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124865",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124865",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124863",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124863",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124862",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124862",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124860",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124860",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124858",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124858",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124857",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124857",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124856",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124856",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-124852",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124852",
+      "product": "",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "",
+      "response": "",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-13",
+      "cve": "CVE-2026-111497",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-111497",
+      "product": "Brotli",
+      "cvss": 9.8,
+      "kev": true,
+      "affected": [
+        "1.2.0 (fix 1.2.1)"
+      ],
+      "targets": [
+        "brotli（brew）"
+      ],
+      "summary": "Brotli CVE-2026-111497（CVSS v3.1 9.8 / v4.0 9.2、KEV 掲載）— Google Brotli デコーダのバッファオーバーフロー。細工した Brotli 圧縮ストリームで、デコーダの隣接メモリ破壊、メモリ内容の漏えい、DoS、任意コード実行の可能性。影響範囲は Brotli 1.0.3〜1.2.0。修正版は 1.2.1（1.0.10 / 1.1.1 も同系列の修正版）。",
+      "response": "Mac Brotli 1.2.1",
+      "status": "対応中",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-12",
+      "cve": "CVE-2026-91150",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-91150",
+      "product": "Cockpit",
+      "cvss": 7.5,
+      "kev": false,
+      "affected": [
+        "314-1 (fix 上流 372 相当（Ubuntu USN 待ち）)"
+      ],
+      "targets": [
+        "cockpit-ws"
+      ],
+      "summary": "Cockpit CVE-2026-91150（CVSS 7.5、KEV 未掲載）— 認証不要で細工した断片化 WebSocket メッセージを送ると cockpit-ws のメモリが枯渇して DoS。修正は上流 Cockpit 372。自宅サーバー2台目 は Ubuntu 24.04 の cockpit 314-1。Ubuntu の USN は未確認のため、apt に修正版が来ていなければその旨を記録して待つ。",
+      "response": "サーバー Node.js 24.22.3 / Chrome 157.0.8103.78 / Cockpit",
+      "status": "対応中",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-12",
+      "cve": "CVE-2026-126051",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-126051",
+      "product": "Node.js",
+      "cvss": 7.5,
+      "kev": false,
+      "affected": [
+        "26.3.0 (fix 26.13.1)",
+        "v26.13.0 (fix 26.13.1)"
+      ],
+      "targets": [
+        "Node.js（brew）",
+        "Node.js"
+      ],
+      "summary": "Node.js 2026-11-11 セキュリティリリース 6件（CVSS 7.5〜8.2、KEV 未掲載）— CVE-2026-123863（8.2、HTTP/2 セッション破棄でサーバー停止）/ 123864（8.1、HTTPS で他接続のメモリ・TLS秘密鍵が読める）/ 123865（7.5、HTTP/2 メモリ・FDリーク）/ 123866（7.5、HTTP/2 UAF で他接続のレスポンス漏えい）/ 123874（7.5、HT…",
+      "response": "Mac Node.js 26.13.1 / Chrome 157.0.8103.78",
+      "status": "対応中",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-12",
+      "cve": "CVE-2026-123874",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-123874",
+      "product": "Node.js",
+      "cvss": 7.5,
+      "kev": false,
+      "affected": [
+        "26.3.0 (fix 26.13.1)",
+        "v26.13.0 (fix 26.13.1)"
+      ],
+      "targets": [
+        "Node.js（brew）",
+        "Node.js"
+      ],
+      "summary": "Node.js 2026-11-11 セキュリティリリース 6件（CVSS 7.5〜8.2、KEV 未掲載）— CVE-2026-123863（8.2、HTTP/2 セッション破棄でサーバー停止）/ 123864（8.1、HTTPS で他接続のメモリ・TLS秘密鍵が読める）/ 123865（7.5、HTTP/2 メモリ・FDリーク）/ 123866（7.5、HTTP/2 UAF で他接続のレスポンス漏えい）/ 123874（7.5、HT…",
+      "response": "Mac Node.js 26.13.1 / Chrome 157.0.8103.78",
+      "status": "対応中",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-12",
+      "cve": "CVE-2026-123866",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-123866",
+      "product": "Node.js",
+      "cvss": 7.5,
+      "kev": false,
+      "affected": [
+        "26.3.0 (fix 26.13.1)",
+        "v26.13.0 (fix 26.13.1)"
+      ],
+      "targets": [
+        "Node.js（brew）",
+        "Node.js"
+      ],
+      "summary": "Node.js 2026-11-11 セキュリティリリース 6件（CVSS 7.5〜8.2、KEV 未掲載）— CVE-2026-123863（8.2、HTTP/2 セッション破棄でサーバー停止）/ 123864（8.1、HTTPS で他接続のメモリ・TLS秘密鍵が読める）/ 123865（7.5、HTTP/2 メモリ・FDリーク）/ 123866（7.5、HTTP/2 UAF で他接続のレスポンス漏えい）/ 123874（7.5、HT…",
+      "response": "Mac Node.js 26.13.1 / Chrome 157.0.8103.78",
+      "status": "対応中",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-12",
+      "cve": "CVE-2026-123865",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-123865",
+      "product": "Node.js",
+      "cvss": 7.5,
+      "kev": false,
+      "affected": [
+        "26.3.0 (fix 26.13.1)",
+        "v26.13.0 (fix 26.13.1)"
+      ],
+      "targets": [
+        "Node.js（brew）",
+        "Node.js"
+      ],
+      "summary": "Node.js 2026-11-11 セキュリティリリース 6件（CVSS 7.5〜8.2、KEV 未掲載）— CVE-2026-123863（8.2、HTTP/2 セッション破棄でサーバー停止）/ 123864（8.1、HTTPS で他接続のメモリ・TLS秘密鍵が読める）/ 123865（7.5、HTTP/2 メモリ・FDリーク）/ 123866（7.5、HTTP/2 UAF で他接続のレスポンス漏えい）/ 123874（7.5、HT…",
+      "response": "Mac Node.js 26.13.1 / Chrome 157.0.8103.78",
+      "status": "対応中",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-12",
+      "cve": "CVE-2026-123864",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-123864",
+      "product": "Node.js",
+      "cvss": 7.5,
+      "kev": false,
+      "affected": [
+        "26.3.0 (fix 26.13.1)",
+        "v26.13.0 (fix 26.13.1)"
+      ],
+      "targets": [
+        "Node.js（brew）",
+        "Node.js"
+      ],
+      "summary": "Node.js 2026-11-11 セキュリティリリース 6件（CVSS 7.5〜8.2、KEV 未掲載）— CVE-2026-123863（8.2、HTTP/2 セッション破棄でサーバー停止）/ 123864（8.1、HTTPS で他接続のメモリ・TLS秘密鍵が読める）/ 123865（7.5、HTTP/2 メモリ・FDリーク）/ 123866（7.5、HTTP/2 UAF で他接続のレスポンス漏えい）/ 123874（7.5、HT…",
+      "response": "Mac Node.js 26.13.1 / Chrome 157.0.8103.78",
+      "status": "対応中",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-12",
+      "cve": "CVE-2026-123863",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-123863",
+      "product": "Node.js",
+      "cvss": 8.2,
+      "kev": false,
+      "affected": [
+        "26.3.0 (fix 26.13.1)",
+        "v26.13.0 (fix 26.13.1)"
+      ],
+      "targets": [
+        "Node.js（brew）",
+        "Node.js"
+      ],
+      "summary": "Node.js 2026-11-11 セキュリティリリース 6件（CVSS 7.5〜8.2、KEV 未掲載）— CVE-2026-123863（8.2、HTTP/2 セッション破棄でサーバー停止）/ 123864（8.1、HTTPS で他接続のメモリ・TLS秘密鍵が読める）/ 123865（7.5、HTTP/2 メモリ・FDリーク）/ 123866（7.5、HTTP/2 UAF で他接続のレスポンス漏えい）/ 123874（7.5、HT…",
+      "response": "Mac Node.js 26.13.1 / Chrome 157.0.8103.78",
+      "status": "対応中",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-11",
+      "cve": "CVE-2026-126187",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-126187",
+      "product": "React",
+      "cvss": 9.5,
+      "kev": false,
+      "affected": [],
+      "targets": [
+        "airfryer"
+      ],
+      "summary": "React Server Components における認証不要のリモートコード実行",
+      "response": "airfryer の React を 19.2.9 へ",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-11",
+      "cve": "CVE-2026-125712",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-125712",
+      "product": "GStreamer",
+      "cvss": 7.5,
+      "kev": false,
+      "affected": [
+        "1.28.2-1ubuntu0.1 (fix 未公表（Ubuntu の USN 待ち）)",
+        "1.24.2-1ubuntu0.5 (fix 未公表（Ubuntu の USN 待ち）)"
+      ],
+      "targets": [
+        "gstreamer1.0-plugins-base"
+      ],
+      "summary": "gst-plugins-base の RTCP SDES パケットパーサーで範囲外読み取り。アクティブなメディアセッションに届く不正な SDES エントリが発火点。",
+      "response": "サーバー GStreamer core / gst-plugins-base",
+      "status": "対応中",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-11",
+      "cve": "CVE-2026-125704",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-125704",
+      "product": "GStreamer",
+      "cvss": 7.5,
+      "kev": false,
+      "affected": [
+        "1.28.2-1ubuntu0.1 (fix 未公表（Ubuntu の USN 待ち）)",
+        "1.24.2-1ubuntu0.5 (fix 未公表（Ubuntu の USN 待ち）)"
+      ],
+      "targets": [
+        "gstreamer1.0-plugins-base"
+      ],
+      "summary": "GStreamer core のバッファ値デシリアライズで use-after-free。信頼できない caps／structure データを解析するアプリが対象。ネットワーク越しの GStreamer Data Protocol 受信側はユーザー操作なしで到達可能。",
+      "response": "サーバー GStreamer core / gst-plugins-base",
+      "status": "対応中",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-11",
+      "cve": "CVE-2026-125350",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-125350",
+      "product": "Chrome",
+      "cvss": 8.3,
+      "kev": false,
+      "affected": [
+        "157.0.8103.38 (fix 157.0.8103.50)",
+        "156.0.8078.80 (fix 157.0.8103.50)"
+      ],
+      "targets": [
+        "Google Chrome"
+      ],
+      "summary": "Chrome 6件（CVSS 8.3〜9.6）— CVE-2026-125343 / 125344 / 125346 / 125347（9.6、FileSystem の不適切な認可でサンドボックス外のコード実行）/ 125348 / 125350。修正版 157.0.8103.50。",
+      "response": "Mac Firefox 160 / Chrome 157.0.8103.50 / Git 2.50.2",
+      "status": "完了",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-11",
+      "cve": "CVE-2026-125348",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-125348",
+      "product": "Chrome",
+      "cvss": 8.3,
+      "kev": false,
+      "affected": [
+        "157.0.8103.38 (fix 157.0.8103.50)",
+        "156.0.8078.80 (fix 157.0.8103.50)"
+      ],
+      "targets": [
+        "Google Chrome"
+      ],
+      "summary": "Chrome 6件（CVSS 8.3〜9.6）— CVE-2026-125343 / 125344 / 125346 / 125347（9.6、FileSystem の不適切な認可でサンドボックス外のコード実行）/ 125348 / 125350。修正版 157.0.8103.50。",
+      "response": "Mac Firefox 160 / Chrome 157.0.8103.50 / Git 2.50.2",
+      "status": "完了",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-11",
+      "cve": "CVE-2026-125347",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-125347",
+      "product": "Chrome",
+      "cvss": 8.3,
+      "kev": false,
+      "affected": [
+        "157.0.8103.38 (fix 157.0.8103.50)",
+        "156.0.8078.80 (fix 157.0.8103.50)"
+      ],
+      "targets": [
+        "Google Chrome"
+      ],
+      "summary": "Chrome 6件（CVSS 8.3〜9.6）— CVE-2026-125343 / 125344 / 125346 / 125347（9.6、FileSystem の不適切な認可でサンドボックス外のコード実行）/ 125348 / 125350。修正版 157.0.8103.50。",
+      "response": "Mac Firefox 160 / Chrome 157.0.8103.50 / Git 2.50.2",
+      "status": "完了",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-11",
+      "cve": "CVE-2026-125346",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-125346",
+      "product": "Chrome",
+      "cvss": 8.3,
+      "kev": false,
+      "affected": [
+        "157.0.8103.38 (fix 157.0.8103.50)",
+        "156.0.8078.80 (fix 157.0.8103.50)"
+      ],
+      "targets": [
+        "Google Chrome"
+      ],
+      "summary": "Chrome 6件（CVSS 8.3〜9.6）— CVE-2026-125343 / 125344 / 125346 / 125347（9.6、FileSystem の不適切な認可でサンドボックス外のコード実行）/ 125348 / 125350。修正版 157.0.8103.50。",
+      "response": "Mac Firefox 160 / Chrome 157.0.8103.50 / Git 2.50.2",
+      "status": "完了",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-11",
+      "cve": "CVE-2026-125344",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-125344",
+      "product": "Chrome",
+      "cvss": 8.3,
+      "kev": false,
+      "affected": [
+        "157.0.8103.38 (fix 157.0.8103.50)",
+        "156.0.8078.80 (fix 157.0.8103.50)"
+      ],
+      "targets": [
+        "Google Chrome"
+      ],
+      "summary": "Chrome 6件（CVSS 8.3〜9.6）— CVE-2026-125343 / 125344 / 125346 / 125347（9.6、FileSystem の不適切な認可でサンドボックス外のコード実行）/ 125348 / 125350。修正版 157.0.8103.50。",
+      "response": "Mac Firefox 160 / Chrome 157.0.8103.50 / Git 2.50.2",
+      "status": "完了",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-11",
+      "cve": "CVE-2026-125343",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-125343",
+      "product": "Chrome",
+      "cvss": 8.3,
+      "kev": false,
+      "affected": [
+        "157.0.8103.38 (fix 157.0.8103.50)",
+        "156.0.8078.80 (fix 157.0.8103.50)"
+      ],
+      "targets": [
+        "Google Chrome"
+      ],
+      "summary": "Chrome 6件（CVSS 8.3〜9.6）— CVE-2026-125343 / 125344 / 125346 / 125347（9.6、FileSystem の不適切な認可でサンドボックス外のコード実行）/ 125348 / 125350。修正版 157.0.8103.50。",
+      "response": "Mac Firefox 160 / Chrome 157.0.8103.50 / Git 2.50.2",
+      "status": "完了",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-11",
+      "cve": "CVE-2026-124917",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124917",
+      "product": "Firefox",
+      "cvss": 9.6,
+      "kev": false,
+      "affected": [
+        "157.0.1 (fix 160)",
+        "155.0 (fix 160)"
+      ],
+      "targets": [
+        "Firefox"
+      ],
+      "summary": "Firefox 160 batch 59件（CVSS 8.8〜9.6、KEV 未掲載）— うち 9.6 は CVE-2026-124853 / 124859 / 124861 / 124864 / 124900 / 124903 / 124917（サンドボックスエスケープ等）。同バッチの未評価 35件も同じ Firefox 160 で修正。",
+      "response": "Mac Firefox 160 / Chrome 157.0.8103.50 / Git 2.50.2",
+      "status": "完了",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-11",
+      "cve": "CVE-2026-124903",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124903",
+      "product": "Firefox",
+      "cvss": 9.6,
+      "kev": false,
+      "affected": [
+        "157.0.1 (fix 160)",
+        "155.0 (fix 160)"
+      ],
+      "targets": [
+        "Firefox"
+      ],
+      "summary": "Firefox 160 batch 59件（CVSS 8.8〜9.6、KEV 未掲載）— うち 9.6 は CVE-2026-124853 / 124859 / 124861 / 124864 / 124900 / 124903 / 124917（サンドボックスエスケープ等）。同バッチの未評価 35件も同じ Firefox 160 で修正。",
+      "response": "Mac Firefox 160 / Chrome 157.0.8103.50 / Git 2.50.2",
+      "status": "完了",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-11",
+      "cve": "CVE-2026-124900",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124900",
+      "product": "Firefox",
+      "cvss": 9.6,
+      "kev": false,
+      "affected": [
+        "157.0.1 (fix 160)",
+        "155.0 (fix 160)"
+      ],
+      "targets": [
+        "Firefox"
+      ],
+      "summary": "Firefox 160 batch 59件（CVSS 8.8〜9.6、KEV 未掲載）— うち 9.6 は CVE-2026-124853 / 124859 / 124861 / 124864 / 124900 / 124903 / 124917（サンドボックスエスケープ等）。同バッチの未評価 35件も同じ Firefox 160 で修正。",
+      "response": "Mac Firefox 160 / Chrome 157.0.8103.50 / Git 2.50.2",
+      "status": "完了",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-11",
+      "cve": "CVE-2026-124864",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124864",
+      "product": "Firefox",
+      "cvss": 9.6,
+      "kev": false,
+      "affected": [
+        "157.0.1 (fix 160)",
+        "155.0 (fix 160)"
+      ],
+      "targets": [
+        "Firefox"
+      ],
+      "summary": "Firefox 160 batch 59件（CVSS 8.8〜9.6、KEV 未掲載）— うち 9.6 は CVE-2026-124853 / 124859 / 124861 / 124864 / 124900 / 124903 / 124917（サンドボックスエスケープ等）。同バッチの未評価 35件も同じ Firefox 160 で修正。",
+      "response": "Mac Firefox 160 / Chrome 157.0.8103.50 / Git 2.50.2",
+      "status": "完了",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-11",
+      "cve": "CVE-2026-124861",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124861",
+      "product": "Firefox",
+      "cvss": 9.6,
+      "kev": false,
+      "affected": [
+        "157.0.1 (fix 160)",
+        "155.0 (fix 160)"
+      ],
+      "targets": [
+        "Firefox"
+      ],
+      "summary": "Firefox 160 batch 59件（CVSS 8.8〜9.6、KEV 未掲載）— うち 9.6 は CVE-2026-124853 / 124859 / 124861 / 124864 / 124900 / 124903 / 124917（サンドボックスエスケープ等）。同バッチの未評価 35件も同じ Firefox 160 で修正。",
+      "response": "Mac Firefox 160 / Chrome 157.0.8103.50 / Git 2.50.2",
+      "status": "完了",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-11",
+      "cve": "CVE-2026-124859",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124859",
+      "product": "Firefox",
+      "cvss": 9.6,
+      "kev": false,
+      "affected": [
+        "157.0.1 (fix 160)",
+        "155.0 (fix 160)"
+      ],
+      "targets": [
+        "Firefox"
+      ],
+      "summary": "Firefox 160 batch 59件（CVSS 8.8〜9.6、KEV 未掲載）— うち 9.6 は CVE-2026-124853 / 124859 / 124861 / 124864 / 124900 / 124903 / 124917（サンドボックスエスケープ等）。同バッチの未評価 35件も同じ Firefox 160 で修正。",
+      "response": "Mac Firefox 160 / Chrome 157.0.8103.50 / Git 2.50.2",
+      "status": "完了",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-11",
+      "cve": "CVE-2026-124853",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-124853",
+      "product": "Firefox",
+      "cvss": 9.6,
+      "kev": false,
+      "affected": [
+        "157.0.1 (fix 160)",
+        "155.0 (fix 160)"
+      ],
+      "targets": [
+        "Firefox"
+      ],
+      "summary": "Firefox 160 batch 59件（CVSS 8.8〜9.6、KEV 未掲載）— うち 9.6 は CVE-2026-124853 / 124859 / 124861 / 124864 / 124900 / 124903 / 124917（サンドボックスエスケープ等）。同バッチの未評価 35件も同じ Firefox 160 で修正。",
+      "response": "Mac Firefox 160 / Chrome 157.0.8103.50 / Git 2.50.2",
+      "status": "完了",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-11",
+      "cve": "CVE-2026-105437",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-105437",
+      "product": "Git",
+      "cvss": 7.5,
+      "kev": false,
+      "affected": [
+        "2.50.1 (fix 2.50.2（Xcode CLT 更新）)"
+      ],
+      "targets": [
+        "Git（Apple Git）",
+        "Git"
+      ],
+      "summary": "Git 6件（CVE-2026-105437 は CVSS 7.5、KEV 未掲載。残り CVE-2026-111760 / 113408 / 114467 / 114469 / 114466 は NVD 未掲載だが同一リリースで修正）— 修正版 2.50.2（2.50 系）。",
+      "response": "Mac Firefox 160 / Chrome 157.0.8103.50 / Git 2.50.2",
+      "status": "完了",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-10",
+      "cve": "CVE-2026-121629",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-121629",
+      "product": "GStreamer",
+      "cvss": 7.5,
+      "kev": false,
+      "affected": [
+        "1.28.2-2ubuntu0.4 (fix gst-plugins-good 1.28.9（上流修正版）)",
+        "1.24.2-1ubuntu1.8 (fix 同上)"
+      ],
+      "targets": [
+        "gstreamer1.0-plugins-good"
+      ],
+      "summary": "gst-plugins-good の adaptivedemux2 で file:// URI によるローカルファイル漏えい",
+      "response": "サーバー GStreamer / krb5",
+      "status": "対応中",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-10",
+      "cve": "CVE-2026-119610",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-119610",
+      "product": "GStreamer",
+      "cvss": 8.2,
+      "kev": false,
+      "affected": [
+        "1.28.2-2ubuntu0.4 (fix gst-plugins-good 1.28.9（上流修正版）)",
+        "1.24.2-1ubuntu1.8 (fix 同上)"
+      ],
+      "targets": [
+        "gstreamer1.0-plugins-good"
+      ],
+      "summary": "gst-plugins-good の H.264 RTP デペイローダーでヒープ範囲外読み取り",
+      "response": "サーバー GStreamer / krb5",
+      "status": "対応中",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-10",
+      "cve": "CVE-2026-113961",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-113961",
+      "product": "macOS",
+      "cvss": 7.5,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "iMessage の認可の問題。リモートの攻撃者が iMessage のグループチャットに参加し、そのメッセージを受信できる可能性。macOS Tahoe 26.7.3 で修正。",
+      "response": "macOS Tahoe 26.7.3 へ更新",
+      "status": "対応中",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-10",
+      "cve": "CVE-2026-112314",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-112314",
+      "product": "krb5",
+      "cvss": 7.5,
+      "kev": false,
+      "affected": [
+        "1.22.1-2ubuntu4.1 (fix 未リリース（上流の修正版はまだ出ていない）)",
+        "1.20.1-6ubuntu2.7 (fix 同上)",
+        "1.22.2 (fix 未リリース)"
+      ],
+      "targets": [
+        "libgssapi-krb5-2",
+        "krb5"
+      ],
+      "summary": "MIT krb5 の GSS-RPC クライアントでメモリリーク（DoS）",
+      "response": "サーバー GStreamer / krb5",
+      "status": "対応中",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-09",
+      "cve": "CVE-2026-123608",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-123608",
+      "product": "hickory-proto",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "CVE-2026-123608 / BinEncoder の名前圧縮による CPU 枯渇（O(n²)） / 0.3.1 〜 <0.26.1 / 0.26.1",
+      "response": "Hickory DNS (hickory-proto 0.25.2) — 2026-11-09 CVEウォッチ ヒット",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-09",
+      "cve": "CVE-2026-123607",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-123607",
+      "product": "hickory-proto",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "CVE-2026-123607 / NSEC3 最近接エンクロージャー証明の無制限ループ（DNSSEC検証時のみ到達） / 0.25.0-alpha.3 〜 0.25.2 / 0.26.0-beta.1（proto）/ 0.26.1（net）",
+      "response": "Hickory DNS (hickory-proto 0.25.2) — 2026-11-09 CVEウォッチ ヒット",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-09",
+      "cve": "CVE-2026-123580",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-123580",
+      "product": "hickory-proto",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "CVE-2026-123580 / DNSSEC NSEC3 不存在証明の偽造（別ゾーンの NSEC3 レコードで検証をすり抜け） / 〜 0.26.0-alpha.1 / 0.26.2 系へ移行",
+      "response": "Hickory DNS (hickory-proto 0.25.2) — 2026-11-09 CVEウォッチ ヒット",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-09",
+      "cve": "CVE-2026-123574",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-123574",
+      "product": "hickory-proto",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "CVE-2026-123574 / ゾーンファイルパーサーのパニック（4096バイト以上のトークン） / 0.24.0 〜 <0.26.2 / 0.26.2",
+      "response": "Hickory DNS (hickory-proto 0.25.2) — 2026-11-09 CVEウォッチ ヒット",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-09",
+      "cve": "CVE-2026-123573",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-123573",
+      "product": "hickory-proto",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "CVE-2026-123573 / SVCB/HTTPS ゾーンファイルパーサーのパニック（引用符だけのパラメータ値） / 0.20.1 〜 <0.26.2 / 0.26.2",
+      "response": "Hickory DNS (hickory-proto 0.25.2) — 2026-11-09 CVEウォッチ ヒット",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-09",
+      "cve": "CVE-2026-123572",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-123572",
+      "product": "hickory-proto",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "CVE-2026-123572 / SVCB/HTTPS ゾーンパーサーのパニック（alpn の不正値） / 0.20.1 〜 <0.26.2 / 0.26.2",
+      "response": "Hickory DNS (hickory-proto 0.25.2) — 2026-11-09 CVEウォッチ ヒット",
+      "status": "報告済み",
+      "progress": ""
+    },
+    {
+      "date": "2026-11-09",
+      "cve": "CVE-2026-123570",
+      "url": "https://cvehub.io/jp/cve/CVE-2026-123570",
+      "product": "hickory-proto",
+      "cvss": null,
+      "kev": false,
+      "affected": [],
+      "targets": [],
+      "summary": "CVE-2026-123570 / RR数によるメモリ増幅 DoS（ワイヤパーサーが ANCOUNT 等を信頼して事前確保。偽装応答で1メッセージ約18MB） / 0.18 〜 <0.26.2 / 0.26.2",
+      "response": "Hickory DNS (hickory-proto 0.25.2) — 2026-11-09 CVEウォッチ ヒット",
+      "status": "報告済み",
+      "progress": ""
+    },
     {
       "date": "2026-11-07",
       "cve": "CVE-2026-116592",
@@ -16,8 +1422,8 @@
       "cvss": 7.4,
       "kev": false,
       "affected": [
-        "7.30.1 (fix 7.30.2+)",
-        "8.12.2-8.12.3 (fix 8.12.4+)"
+        "7.30.1 (fix 7.30.2〜)",
+        "8.12.3 (fix 8.12.4〜)"
       ],
       "targets": [
         "r2-cms",
@@ -25,8 +1431,8 @@
         "embed-hash-check",
         "MdYomuKiku"
       ],
-      "summary": "undici のキャッシュポイズニング／他ユーザーへの情報漏えい。 originless Agent が redirect＋共有キャッシュの interceptor を組み合わせた場合に、 中間リダイレクトホップ経由で信頼済み URL のキャッシュを汚染されたり、 ユーザーごとの非公開レスポンスが別ユーザーに渡されたりする。",
-      "response": "undici を修正版へ更新（7.30.1 → 7.30.2+、8.12.2-8.12.3 → 8.12.4+）。各対象で npm update を実行し、lock の更新を確認する。更新オーダーを 脆弱性ウォッチ の orders/ に発行し、Codex が実行する。",
+      "summary": "undici のキャッシュポイズニング／他ユーザーへの情報漏えい。",
+      "response": "undici",
       "status": "対応完了",
       "progress": "4件中3件は解消済み（MdYomuKiku、embed-hash-check、wrangler-app）。残り1件は r2-cms の内部で使う miniflare が undici を古い版に固定しているための待ちです。対象は外部から届かない開発用ツールなので、この環境の対応としては完了とします（miniflare 側の修正が出たら通常手順で上げます）。"
     }
