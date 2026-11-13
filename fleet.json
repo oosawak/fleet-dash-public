@@ -1,8 +1,30 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "center": "ミューズ（取りまとめ・検品）",
   "note": "公開版。マシン名は役割名に置き換え、棚卸しの詳細とモデル一覧は伏せてあります。",
   "machines": [
+    {
+      "name": "自宅サーバー1台目",
+      "kind": "自宅マシン",
+      "os": "Ubuntu",
+      "cpu": "12th Gen Intel(R) Core(TM) i9-12900K",
+      "ram_gb": 123.282,
+      "gpus": [
+        {
+          "model": "NVIDIA GeForce RTX 3090",
+          "vram_gb": 24.0
+        }
+      ],
+      "storage_free_gb": 722.625,
+      "runtime": "未確認",
+      "models": [],
+      "role": "配置は棚卸しの結果を見て決める",
+      "status": "ソフト棚卸し済み／ハードウェア棚卸し済み",
+      "statuses": [
+        "ソフト棚卸し済み",
+        "ハードウェア棚卸し済み"
+      ]
+    },
     {
       "name": "自宅サーバー2台目",
       "kind": "自宅マシン",
@@ -82,28 +104,6 @@
       "role": "下読み・要約・別解出しの外注先（カタログ全84モデル）",
       "status": "APIキー待ち",
       "statuses": []
-    },
-    {
-      "name": "自宅サーバー1台目",
-      "kind": "自宅マシン",
-      "os": "Ubuntu",
-      "cpu": "Intel Core i9",
-      "ram_gb": 128,
-      "gpus": [
-        {
-          "model": "NVIDIA GeForce RTX 3090",
-          "vram_gb": 24
-        }
-      ],
-      "storage_free_gb": null,
-      "runtime": "未確認",
-      "models": [],
-      "role": "配置は棚卸しの結果を見て決める",
-      "status": "ソフト棚卸し済み／ハードウェア棚卸し待ち",
-      "statuses": [
-        "ソフト棚卸し済み",
-        "ハードウェア棚卸し待ち"
-      ]
     }
   ]
 }
